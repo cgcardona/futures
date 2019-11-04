@@ -1,6 +1,6 @@
-extern crate tokio;
 #[macro_use]
 extern crate futures;
+extern crate tokio;
 
 mod display;
 mod hello_world;

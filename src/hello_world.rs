@@ -1,5 +1,6 @@
 use futures::{Async, Future, Poll};
 
+#[derive(Debug)]
 pub struct HelloWorld;
 
 impl Future for HelloWorld {
@@ -7,6 +8,6 @@ impl Future for HelloWorld {
     type Error = ();
 
     fn poll(&mut self) -> Poll<Self::Item, Self::Error> {
-        Ok(Async::Ready("HELLO WORLD".to_string()))
+        Ok(Async::Ready("HELLO WORLD".into()))
     }
 }

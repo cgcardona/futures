@@ -1,6 +1,7 @@
 use futures::{Async, Future, Poll};
 use std::fmt;
 
+#[derive(Debug)]
 pub struct Display<T>(pub T);
 
 impl<T> Future for Display<T>
